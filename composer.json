@@ -1,0 +1,21 @@
+{
+    "name": "jafar/markdowner",
+    "authors": [
+        {
+            "name": "Jafar Shadiq",
+            "email": "reekoheek@gmail.com"
+        }
+    ],
+    "bin": [
+        "bin/markdowner"
+    ],
+    "require": {
+        "slim/slim": "2.3.*",
+        "michelf/php-markdown": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Markdowner": "src/"
+        }
+    }
+}
