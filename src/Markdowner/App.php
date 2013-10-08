@@ -18,6 +18,10 @@ class App extends \Slim\Slim {
     public function findDocs($path) {
         $result = array();
 
+        if (!is_readable($path) || !is_dir($path)) {
+            return array();
+        }
+
         if ($handle = opendir($path)) {
 
             while (false !== ($entry = readdir($handle))) {
