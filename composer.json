@@ -7,7 +7,7 @@
         }
     ],
     "bin": [
-        "bin/markdowner"
+        "bin/markdowner.php"
     ],
     "require": {
         "slim/slim": "2.3.*",
